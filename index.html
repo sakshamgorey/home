@@ -12,6 +12,20 @@
         <script src="assets\js\voicevis.js"></script>
         <link rel="stylesheet" href="assets\css\voicevis\voicevis.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+        <script>
+            if (annyang) {
+              // Let's define a command.
+              const commands = {
+                'hello': () => { alert('Hello world!'); }
+              };
+            
+              // Add our commands to annyang
+              annyang.addCommands(commands);
+            
+              // Start listening.
+              annyang.start();
+            }
+            </script>
         <script src="assets\js\voicecommandsbasic.js"></script>
     </head>
 
